@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Robo CI",
+  "Type": "Screen",
+  "Id": "WVpPOeZCd0SXvNzVltW_6Q",
+  "Reference": "60oSk7LFp0izfRZcvjdP0w/WVpPOeZCd0SXvNzVltW_6Q",
+  "ParentRef": "60oSk7LFp0izfRZcvjdP0w/HWt9WeB9906e81ZmmjkfWA",
+  "Created": "2025-01-31T13:28:23.186498Z",
+  "Updated": "2025-01-31T13:28:23.186498Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

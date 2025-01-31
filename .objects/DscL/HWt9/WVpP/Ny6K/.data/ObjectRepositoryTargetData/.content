@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HCQfczd7k0y9PZ18aJszIw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="3715133f-23b5-4f35-a435-4d366bb5ed44" CvElementArea="244, 405, 17, 17" CvTextArea="263, 407, 56, 14" CvTextArgument="Paisagem" CvType="RadioButton" DesignTimeRectangle="246, 405, 95, 18" DesignTimeScaleFactor="1" ElementType="RadioButton" FullSelectorArgument="&lt;wnd cls='Button' title='Paisagem' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Button' title='Paisagem' /&gt;" Guid="171b2b3e-79a9-4d66-babc-0366cf26a4ef" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='#32770' title='Imprimir' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="3715133f-23b5-4f35-a435-4d366bb5ed44" CvTextArea="263, 407, 56, 14" CvTextArgument="Paisagem" CvType="Text" DesignTimeRectangle="263, 407, 56, 14" ElementType="Text" Guid="931255ae-c906-472f-b60c-c6f8f6a32067" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="dc007dda8d5373b6054f7bd9e50306b2.png" xmlns="">0vcaoHCm40k6p0o1QI7MQPQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

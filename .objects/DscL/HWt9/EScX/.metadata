@@ -1,0 +1,13 @@
+﻿{
+  "Name": "teste.pdf - Adobe Acrobat Reader (64-bit)",
+  "Type": "Screen",
+  "Id": "EScXlnRqgEWdK21KkeGqQA",
+  "Reference": "60oSk7LFp0izfRZcvjdP0w/EScXlnRqgEWdK21KkeGqQA",
+  "ParentRef": "60oSk7LFp0izfRZcvjdP0w/HWt9WeB9906e81ZmmjkfWA",
+  "Created": "2025-01-30T17:48:03.9691377Z",
+  "Updated": "2025-01-30T17:48:03.9691377Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

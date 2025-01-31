@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Paisagem",
+  "Type": "Element",
+  "TaxonomyType": "RadioButton",
+  "Id": "Ny6KXm2Thk6eF6F33qm3nw",
+  "Reference": "60oSk7LFp0izfRZcvjdP0w/Ny6KXm2Thk6eF6F33qm3nw",
+  "ParentRef": "60oSk7LFp0izfRZcvjdP0w/WVpPOeZCd0SXvNzVltW_6Q",
+  "Created": "2025-01-31T13:28:23.4486694Z",
+  "Updated": "2025-01-31T13:28:23.4486694Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
