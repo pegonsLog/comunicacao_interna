@@ -6,17 +6,15 @@
   "dependencies": {
     "UiPath.Excel.Activities": "[2.25.1-preview]",
     "UiPath.GSuite.Activities": "[2.8.23]",
-    "UiPath.Mail.Activities": "[1.24.12]",
     "UiPath.System.Activities": "[24.12.1-preview]",
     "UiPath.UIAutomation.Activities": "[24.12.4-preview]",
-    "UiPath.Word.Activities": "[1.20.3]",
-    "UiPathTeam.GoogleCloudPlatform.Activities": "[1.3.0]"
+    "UiPath.Word.Activities": "[1.20.3]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "25.0.157.0",
-  "projectVersion": "1.0.3",
+  "projectVersion": "1.0.15",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,

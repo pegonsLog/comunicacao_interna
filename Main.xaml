@@ -1,300 +1,286 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugage="clr-namespace:UiPath.GSuite.Activities.Gmail.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugagf="clr-namespace:UiPath.GSuite.Activities.Gmail.Filters;assembly=UiPath.GSuite.Activities" xmlns:ugagm="clr-namespace:UiPath.GSuite.Activities.Gmail.Models;assembly=UiPath.GSuite.Activities" xmlns:ugm="clr-namespace:UiPath.GSuite.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugage="clr-namespace:UiPath.GSuite.Activities.Gmail.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugagm="clr-namespace:UiPath.GSuite.Activities.Gmail.Models;assembly=UiPath.GSuite.Activities" xmlns:ugm="clr-namespace:UiPath.GSuite.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
-      <x:String>System.Activities</x:String>
-      <x:String>System.Activities.Statements</x:String>
-      <x:String>System.Activities.Expressions</x:String>
-      <x:String>System.Activities.Validation</x:String>
-      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>Internal</x:String>
+      <x:String>Microsoft</x:String>
+      <x:String>Microsoft.CodeAnalysis</x:String>
+      <x:String>Microsoft.CodeAnalysis.Diagnostics</x:String>
+      <x:String>Microsoft.CodeAnalysis.Diagnostics.Telemetry</x:String>
+      <x:String>Microsoft.CodeAnalysis.Emit</x:String>
+      <x:String>Microsoft.CodeAnalysis.FlowAnalysis</x:String>
+      <x:String>Microsoft.CodeAnalysis.Operations</x:String>
+      <x:String>Microsoft.CodeAnalysis.Text</x:String>
+      <x:String>Microsoft.CodeAnalysis.VisualBasic</x:String>
+      <x:String>Microsoft.CodeAnalysis.VisualBasic.Syntax</x:String>
+      <x:String>Microsoft.CSharp</x:String>
       <x:String>Microsoft.VisualBasic</x:String>
       <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>Microsoft.VisualBasic.FileIO</x:String>
+      <x:String>Microsoft.Win32.SafeHandles</x:String>
       <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.DurableInstancing</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Hosting</x:String>
+      <x:String>System.Activities.ParallelTracking</x:String>
+      <x:String>System.Activities.Persistence</x:String>
+      <x:String>System.Activities.Runtime</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Activities.Runtime.DurableInstancing</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Statements.Tracking</x:String>
+      <x:String>System.Activities.Tracking</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Buffers</x:String>
+      <x:String>System.Buffers.Binary</x:String>
+      <x:String>System.Buffers.Text</x:String>
+      <x:String>System.CodeDom</x:String>
+      <x:String>System.CodeDom.Compiler</x:String>
       <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Concurrent</x:String>
       <x:String>System.Collections.Generic</x:String>
       <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.ComponentModel.Design</x:String>
+      <x:String>System.ComponentModel.Design.Serialization</x:String>
+      <x:String>System.Configuration.Assemblies</x:String>
       <x:String>System.Data</x:String>
       <x:String>System.Diagnostics</x:String>
+      <x:String>System.Diagnostics.CodeAnalysis</x:String>
+      <x:String>System.Diagnostics.Contracts</x:String>
+      <x:String>System.Diagnostics.SymbolStore</x:String>
+      <x:String>System.Diagnostics.Tracing</x:String>
       <x:String>System.Drawing</x:String>
-      <x:String>System.IO</x:String>
-      <x:String>System.Linq</x:String>
-      <x:String>System.Net.Mail</x:String>
-      <x:String>System.Xml</x:String>
-      <x:String>System.Xml.Linq</x:String>
-      <x:String>UiPath.Core</x:String>
-      <x:String>UiPath.Core.Activities</x:String>
-      <x:String>System.Windows.Markup</x:String>
-      <x:String>GlobalVariablesNamespace</x:String>
-      <x:String>GlobalConstantsNamespace</x:String>
-      <x:String>System.Security</x:String>
-      <x:String>UiPath.Mail</x:String>
-      <x:String>UiPath.Shared.Activities.Utils</x:String>
-      <x:String>UiPath.Mail.Activities.Enums</x:String>
-      <x:String>UiPath.Mail.IMAP.Activities</x:String>
-      <x:String>UiPath.Shared.Activities</x:String>
-      <x:String>UiPath.Mail.Activities</x:String>
-      <x:String>UiPath.Mail.Activities.Business</x:String>
-      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
-      <x:String>UiPath.Mail.Activities.Business.ForEachMail</x:String>
-      <x:String>UiPath.Shared.Activities.Business</x:String>
-      <x:String>System.Linq.Expressions</x:String>
-      <x:String>System.Runtime.Serialization</x:String>
-      <x:String>System.Reflection</x:String>
-      <x:String>Microsoft.Exchange.WebServices.Data</x:String>
-      <x:String>UiPath.Mail.Exchange</x:String>
-      <x:String>UiPath.Mail.Exchange.Activities</x:String>
-      <x:String>UiPath.GSuite.Activities.Gmail.Models</x:String>
-      <x:String>UiPath.GSuite.Activities.Gmail.Filters</x:String>
-      <x:String>UiPath.GSuite.Activities.Filters</x:String>
-      <x:String>UiPath.GSuite.Gmail.Enums</x:String>
-      <x:String>UiPath.GSuite.Models</x:String>
-      <x:String>UiPath.Shared.Api.Google.Gmail.Models</x:String>
-      <x:String>UiPath.GSuite.Activities.Gmail.Enums</x:String>
-      <x:String>UiPath.GSuite.Activities</x:String>
-      <x:String>UiPath.GSuite</x:String>
-      <x:String>System.Numerics</x:String>
-      <x:String>UiPath.GSuite.Gmail.Models</x:String>
-      <x:String>UiPath.Sdk.Activities</x:String>
-      <x:String>UiPath.Sdk.Activities.DependencyInjection.Contracts</x:String>
-      <x:String>UiPath.Sdk.Activities.DependencyInjection</x:String>
-      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
-      <x:String>Microsoft</x:String>
-      <x:String>Microsoft.Win32.SafeHandles</x:String>
-      <x:String>System.Net</x:String>
+      <x:String>System.Dynamic</x:String>
       <x:String>System.Globalization</x:String>
-      <x:String>System.Configuration.Assemblies</x:String>
-      <x:String>System.ComponentModel</x:String>
-      <x:String>System.CodeDom.Compiler</x:String>
-      <x:String>System.Buffers</x:String>
-      <x:String>System.Buffers.Text</x:String>
-      <x:String>System.Buffers.Binary</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.IO.Enumeration</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Linq.Expressions.Interpreter</x:String>
+      <x:String>System.Management.Automation</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Reflection.Emit</x:String>
+      <x:String>System.Reflection.Metadata</x:String>
+      <x:String>System.Resources</x:String>
+      <x:String>System.Runtime</x:String>
+      <x:String>System.Runtime.CompilerServices</x:String>
+      <x:String>System.Runtime.ConstrainedExecution</x:String>
+      <x:String>System.Runtime.ExceptionServices</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.InteropServices.ComTypes</x:String>
+      <x:String>System.Runtime.InteropServices.Marshalling</x:String>
+      <x:String>System.Runtime.InteropServices.ObjectiveC</x:String>
+      <x:String>System.Runtime.Intrinsics</x:String>
+      <x:String>System.Runtime.Intrinsics.Arm</x:String>
+      <x:String>System.Runtime.Intrinsics.Wasm</x:String>
+      <x:String>System.Runtime.Intrinsics.X86</x:String>
+      <x:String>System.Runtime.Loader</x:String>
+      <x:String>System.Runtime.Remoting</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Runtime.Versioning</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Security.Authentication.ExtendedProtection</x:String>
+      <x:String>System.Security.Cryptography</x:String>
+      <x:String>System.Security.Permissions</x:String>
+      <x:String>System.Security.Principal</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Text.Unicode</x:String>
       <x:String>System.Threading</x:String>
       <x:String>System.Threading.Tasks</x:String>
       <x:String>System.Threading.Tasks.Sources</x:String>
-      <x:String>System.Text</x:String>
-      <x:String>System.Text.Unicode</x:String>
-      <x:String>System.Security.Principal</x:String>
-      <x:String>System.Security.Permissions</x:String>
-      <x:String>System.Security.Cryptography</x:String>
-      <x:String>System.Runtime</x:String>
-      <x:String>System.Runtime.Remoting</x:String>
-      <x:String>System.Runtime.ExceptionServices</x:String>
-      <x:String>System.Runtime.ConstrainedExecution</x:String>
-      <x:String>System.Runtime.Versioning</x:String>
-      <x:String>System.Runtime.Loader</x:String>
-      <x:String>System.Runtime.Intrinsics</x:String>
-      <x:String>System.Runtime.Intrinsics.Wasm</x:String>
-      <x:String>System.Runtime.Intrinsics.Arm</x:String>
-      <x:String>System.Runtime.Intrinsics.X86</x:String>
-      <x:String>System.Runtime.InteropServices</x:String>
-      <x:String>System.Runtime.InteropServices.ObjectiveC</x:String>
-      <x:String>System.Runtime.InteropServices.Marshalling</x:String>
-      <x:String>System.Runtime.InteropServices.ComTypes</x:String>
-      <x:String>System.Runtime.CompilerServices</x:String>
-      <x:String>System.Resources</x:String>
-      <x:String>System.Reflection.Metadata</x:String>
-      <x:String>System.Reflection.Emit</x:String>
-      <x:String>System.IO.Enumeration</x:String>
-      <x:String>System.Diagnostics.SymbolStore</x:String>
-      <x:String>System.Diagnostics.Contracts</x:String>
-      <x:String>System.Diagnostics.CodeAnalysis</x:String>
-      <x:String>System.Diagnostics.Tracing</x:String>
-      <x:String>System.Collections.Concurrent</x:String>
-      <x:String>Internal</x:String>
-      <x:String>System.CodeDom</x:String>
-      <x:String>Microsoft.CSharp</x:String>
-      <x:String>System.Linq.Expressions.Interpreter</x:String>
-      <x:String>System.Dynamic</x:String>
-      <x:String>UiPath.Workflow.Runtime</x:String>
-      <x:String>System.Activities.Tracking</x:String>
-      <x:String>System.Activities.Statements.Tracking</x:String>
-      <x:String>System.Activities.Runtime</x:String>
-      <x:String>System.Activities.Runtime.DurableInstancing</x:String>
-      <x:String>System.Activities.Runtime.Collections</x:String>
-      <x:String>System.Activities.ParallelTracking</x:String>
-      <x:String>System.Activities.Hosting</x:String>
-      <x:String>System.Activities.Persistence</x:String>
-      <x:String>System.Activities.DurableInstancing</x:String>
-      <x:String>System.ComponentModel.Design.Serialization</x:String>
-      <x:String>System.Text.RegularExpressions</x:String>
-      <x:String>System.Security.Authentication.ExtendedProtection</x:String>
       <x:String>System.Timers</x:String>
-      <x:String>System.ComponentModel.Design</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Xml.Resolvers</x:String>
       <x:String>System.Xml.Schema</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Xml.XPath</x:String>
       <x:String>System.Xml.Xsl</x:String>
       <x:String>System.Xml.Xsl.Runtime</x:String>
-      <x:String>System.Xml.XPath</x:String>
-      <x:String>System.Xml.Resolvers</x:String>
-      <x:String>System.Xml.Serialization</x:String>
-      <x:String>Microsoft.CodeAnalysis</x:String>
-      <x:String>Microsoft.CodeAnalysis.FlowAnalysis</x:String>
-      <x:String>Microsoft.CodeAnalysis.Text</x:String>
-      <x:String>Microsoft.CodeAnalysis.Diagnostics</x:String>
-      <x:String>Microsoft.CodeAnalysis.Diagnostics.Telemetry</x:String>
-      <x:String>Microsoft.CodeAnalysis.Operations</x:String>
-      <x:String>Microsoft.CodeAnalysis.Emit</x:String>
-      <x:String>Microsoft.CodeAnalysis.VisualBasic</x:String>
-      <x:String>Microsoft.CodeAnalysis.VisualBasic.Syntax</x:String>
-      <x:String>Microsoft.VisualBasic.FileIO</x:String>
-      <x:String>UiPath.GSuite.Activities.Utilities</x:String>
-      <x:String>UiPath.Productivity.Activities.Diagnostics</x:String>
-      <x:String>UiPath.GSuite.Activities.Gmail.Triggers</x:String>
-      <x:String>UiPath.Shared.Api.Google.Gmail.Contracts</x:String>
-      <x:String>System.Management.Automation</x:String>
-      <x:String>UiPath.Platform.Triggers</x:String>
-      <x:String>UiPath.Platform.Triggers.Scope</x:String>
-      <x:String>UiPath.Word</x:String>
-      <x:String>UiPath.Word.Activities</x:String>
-      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
-      <x:String>UiPath.UIAutomationNext.Enums</x:String>
-      <x:String>UiPath.UIAutomationNext.Models</x:String>
-      <x:String>UiPath.UIAutomationNext.Activities</x:String>
-      <x:String>UiPath.Platform.ObjectLibrary</x:String>
-      <x:String>UiPath.Platform.SyncObjects</x:String>
-      <x:String>UiPath.GSuite.Activities.Docs.Enums</x:String>
-      <x:String>UiPath.GSuite.Activities.Models</x:String>
-      <x:String>UiPath.GSuite.Activities.Drive.Enums</x:String>
-      <x:String>UiPath.GSuite.Drive.Models</x:String>
-      <x:String>UiPath.Platform.ResourceHandling</x:String>
-      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
-      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
       <x:String>UiPath.Excel</x:String>
       <x:String>UiPath.Excel.Activities.Business</x:String>
       <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.GSuite</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.GSuite.Activities.Docs.Enums</x:String>
+      <x:String>UiPath.GSuite.Activities.Drive.Enums</x:String>
+      <x:String>UiPath.GSuite.Activities.Filters</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Enums</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Filters</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Triggers</x:String>
+      <x:String>UiPath.GSuite.Activities.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Utilities</x:String>
+      <x:String>UiPath.GSuite.Drive.Models</x:String>
+      <x:String>UiPath.GSuite.Gmail.Enums</x:String>
+      <x:String>UiPath.GSuite.Gmail.Models</x:String>
+      <x:String>UiPath.GSuite.Models</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.Productivity.Activities.Diagnostics</x:String>
+      <x:String>UiPath.Sdk.Activities</x:String>
+      <x:String>UiPath.Sdk.Activities.DependencyInjection</x:String>
+      <x:String>UiPath.Sdk.Activities.DependencyInjection.Contracts</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.Shared.Api.Google.Gmail.Contracts</x:String>
+      <x:String>UiPath.Shared.Api.Google.Gmail.Models</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>UiPath.Word.Activities</x:String>
+      <x:String>UiPath.Workflow.Runtime</x:String>
+      <x:String>UiPath.Productivity.Activities.Persistence</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
     <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CodeAnalysis</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis.Features</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.PowerShell.Commands.Diagnostics</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualStudio.Validation</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Registry</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
       <AssemblyReference>PresentationCore</AssemblyReference>
       <AssemblyReference>PresentationFramework</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
       <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.Concurrent</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
       <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
       <AssemblyReference>System.Data.Common</AssemblyReference>
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.DiagnosticSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.EventLog</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.FileVersionInfo</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.PerformanceCounter</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.StackTrace</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TextWriterTraceListener</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TraceSource</AssemblyReference>
       <AssemblyReference>System.Drawing</AssemblyReference>
       <AssemblyReference>System.Drawing.Common</AssemblyReference>
       <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.MemoryMappedFiles</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.Pipes</AssemblyReference>
       <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Management.Automation</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
       <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.Security</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
       <AssemblyReference>System.ObjectModel</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Private.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Resources.Writer</AssemblyReference>
+      <AssemblyReference>System.Runtime.CompilerServices.VisualC</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Claims</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Pkcs</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.ProtectedData</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Security.Principal.Windows</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>System.Text.Encodings.Web</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Threading</AssemblyReference>
+      <AssemblyReference>System.Threading.AccessControl</AssemblyReference>
+      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms.Design</AssemblyReference>
       <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>System.Xml</AssemblyReference>
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-      <AssemblyReference>WindowsBase</AssemblyReference>
-      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>System.Security.Permissions</AssemblyReference>
-      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
-      <AssemblyReference>UiPath.Mail</AssemblyReference>
-      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Memory.Data</AssemblyReference>
-      <AssemblyReference>System.Console</AssemblyReference>
-      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
-      <AssemblyReference>System.ComponentModel</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Private.Uri</AssemblyReference>
-      <AssemblyReference>System.Linq.Async</AssemblyReference>
-      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
-      <AssemblyReference>System.Collections</AssemblyReference>
-      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
-      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
-      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
-      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
-      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
-      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
-      <AssemblyReference>Microsoft.Exchange.WebServices</AssemblyReference>
-      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.GSuite</AssemblyReference>
-      <AssemblyReference>System.Interactive.Async</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
-      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
-      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
-      <AssemblyReference>System.IO.Packaging</AssemblyReference>
-      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
-      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
-      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
-      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
-      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
-      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
-      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
-      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
-      <AssemblyReference>Microsoft.VisualStudio.Validation</AssemblyReference>
-      <AssemblyReference>System.IO.Pipes</AssemblyReference>
-      <AssemblyReference>System.Security.Cryptography</AssemblyReference>
-      <AssemblyReference>System.Security.Principal.Windows</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
-      <AssemblyReference>System.IO.MemoryMappedFiles</AssemblyReference>
-      <AssemblyReference>Microsoft.Win32.Registry</AssemblyReference>
-      <AssemblyReference>System.Net.Primitives</AssemblyReference>
-      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
-      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
-      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
-      <AssemblyReference>System.Net.WebClient</AssemblyReference>
-      <AssemblyReference>System.Net.Requests</AssemblyReference>
-      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
-      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
-      <AssemblyReference>System.CodeDom</AssemblyReference>
-      <AssemblyReference>System.Threading.AccessControl</AssemblyReference>
-      <AssemblyReference>System.Threading</AssemblyReference>
-      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
-      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
-      <AssemblyReference>System.Text.Encodings.Web</AssemblyReference>
-      <AssemblyReference>System.Security.Claims</AssemblyReference>
-      <AssemblyReference>System.Security.Cryptography.Pkcs</AssemblyReference>
-      <AssemblyReference>System.Security.Cryptography.ProtectedData</AssemblyReference>
-      <AssemblyReference>System.Windows.Forms.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.CompilerServices.VisualC</AssemblyReference>
-      <AssemblyReference>System.Windows.Forms</AssemblyReference>
-      <AssemblyReference>System.Resources.Writer</AssemblyReference>
-      <AssemblyReference>Microsoft.PowerShell.Commands.Diagnostics</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.FileVersionInfo</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.DiagnosticSource</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.TraceSource</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.EventLog</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.PerformanceCounter</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.TextWriterTraceListener</AssemblyReference>
-      <AssemblyReference>System.Diagnostics.StackTrace</AssemblyReference>
-      <AssemblyReference>System.Collections.Concurrent</AssemblyReference>
-      <AssemblyReference>UiPath.Workflow</AssemblyReference>
-      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
-      <AssemblyReference>System.Net.Security</AssemblyReference>
-      <AssemblyReference>System.Private.Xml</AssemblyReference>
-      <AssemblyReference>System.Private.Xml.Linq</AssemblyReference>
       <AssemblyReference>System.Xml.XPath.XDocument</AssemblyReference>
-      <AssemblyReference>Microsoft.CodeAnalysis.VisualBasic</AssemblyReference>
-      <AssemblyReference>Microsoft.CodeAnalysis</AssemblyReference>
-      <AssemblyReference>Microsoft.CodeAnalysis.CSharp</AssemblyReference>
-      <AssemblyReference>Microsoft.CodeAnalysis.Features</AssemblyReference>
-      <AssemblyReference>System.Management.Automation</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
-      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
-      <AssemblyReference>UiPath.Word</AssemblyReference>
-      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
-      <AssemblyReference>UiPath.Excel</AssemblyReference>
-      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
       <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1095,5639" sap2010:WorkflowViewState.IdRef="Sequence_10">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1095,5997" sap2010:WorkflowViewState.IdRef="Sequence_10">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="nomeSolicitante" />
       <Variable x:TypeArguments="x:String" Name="nomeSolicitado" />
@@ -302,19 +288,24 @@
       <Variable x:TypeArguments="x:String" Name="dataSolicitacao" />
       <Variable x:TypeArguments="x:String" Name="areaSolicitante" />
       <Variable x:TypeArguments="x:String" Name="areaSolicitado" />
+      <Variable x:TypeArguments="ugm:GmailMessage" Name="Result" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="638,742" sap2010:WorkflowViewState.IdRef="Sequence_8">
+    <Sequence sap:VirtualizedContainerService.HintSize="758,5926" sap2010:WorkflowViewState.IdRef="Sequence_8">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="scg:List(ugm:GmailMessage)" Name="emailList" />
+        <Variable x:TypeArguments="x:Int32" Name="Lenght_Message" />
+      </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uga:ForEachEmailConnections ConnectionAccountName="{x:Null}" CurrentIndex="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID0}" Length="{x:Null}" ManualEntryFolder="{x:Null}" AllLabels="W3siSWQiOiJDSEFUIiwiTmFtZSI6IkNIQVQiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlNFTlQiLCJOYW1lIjoiU0VOVCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiSU5CT1giLCJOYW1lIjoiSU5CT1giLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IklNUE9SVEFOVCIsIk5hbWUiOiJJTVBPUlRBTlQiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlRSQVNIIiwiTmFtZSI6IlRSQVNIIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJEUkFGVCIsIk5hbWUiOiJEUkFGVCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiU1BBTSIsIk5hbWUiOiJTUEFNIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9GT1JVTVMiLCJOYW1lIjoiQ0FURUdPUllfRk9SVU1TIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9VUERBVEVTIiwiTmFtZSI6IkNBVEVHT1JZX1VQREFURVMiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IkNBVEVHT1JZX1BFUlNPTkFMIiwiTmFtZSI6IkNBVEVHT1JZX1BFUlNPTkFMIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9QUk9NT1RJT05TIiwiTmFtZSI6IkNBVEVHT1JZX1BST01PVElPTlMiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IkNBVEVHT1JZX1NPQ0lBTCIsIk5hbWUiOiJDQVRFR09SWV9TT0NJQUwiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlNUQVJSRUQiLCJOYW1lIjoiU1RBUlJFRCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiVU5SRUFEIiwiTmFtZSI6IlVOUkVBRCIsIlR5cGUiOiJzeXN0ZW0ifV0=" AuthScopesInvalid="False" BrowserFolder="Inbox" BrowserFolderLabelId="INBOX" ConnectionId="452dce63-8534-4faf-b2db-d2771df43b31" DisplayName="For Each Email" FolderInputSelectionMode="Browse" sap:VirtualizedContainerService.HintSize="515,650" sap2010:WorkflowViewState.IdRef="ForEachEmailConnections_2" ImportantOnly="False" IncludeSubfolders="False" MarkAsRead="False" MaxResults="100" StarredOnly="False" UnreadOnly="False" UseConnectionService="True" WithAttachmentsOnly="False">
+      <uga:ForEachEmailConnections ConnectionAccountName="{x:Null}" CurrentIndex="{x:Null}" Filter="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID0}" ManualEntryFolder="{x:Null}" AllLabels="W3siSWQiOiJDSEFUIiwiTmFtZSI6IkNIQVQiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlNFTlQiLCJOYW1lIjoiU0VOVCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiSU5CT1giLCJOYW1lIjoiSU5CT1giLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IklNUE9SVEFOVCIsIk5hbWUiOiJJTVBPUlRBTlQiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlRSQVNIIiwiTmFtZSI6IlRSQVNIIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJEUkFGVCIsIk5hbWUiOiJEUkFGVCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiU1BBTSIsIk5hbWUiOiJTUEFNIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9GT1JVTVMiLCJOYW1lIjoiQ0FURUdPUllfRk9SVU1TIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9VUERBVEVTIiwiTmFtZSI6IkNBVEVHT1JZX1VQREFURVMiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IkNBVEVHT1JZX1BFUlNPTkFMIiwiTmFtZSI6IkNBVEVHT1JZX1BFUlNPTkFMIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9QUk9NT1RJT05TIiwiTmFtZSI6IkNBVEVHT1JZX1BST01PVElPTlMiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IkNBVEVHT1JZX1NPQ0lBTCIsIk5hbWUiOiJDQVRFR09SWV9TT0NJQUwiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlNUQVJSRUQiLCJOYW1lIjoiU1RBUlJFRCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiVU5SRUFEIiwiTmFtZSI6IlVOUkVBRCIsIlR5cGUiOiJzeXN0ZW0ifV0=" AuthScopesInvalid="False" BrowserFolder="Inbox" BrowserFolderLabelId="INBOX" ConnectionId="26402719-9892-4e0a-bfd1-39b33e779d4c" DisplayName="For Each Email" FolderInputSelectionMode="Browse" sap:VirtualizedContainerService.HintSize="724,5834" sap2010:WorkflowViewState.IdRef="ForEachEmailConnections_2" ImportantOnly="False" IncludeSubfolders="False" Length="[Lenght_Message]" MarkAsRead="True" MaxResults="1" StarredOnly="False" UnreadOnly="True" UseConnectionService="True" WithAttachmentsOnly="False">
         <uga:ForEachEmailConnections.Body>
           <ActivityAction x:TypeArguments="ugm:GmailMessage, x:Int32">
             <ActivityAction.Argument1>
@@ -323,7 +314,7 @@
             <ActivityAction.Argument2>
               <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentEmailIndex" />
             </ActivityAction.Argument2>
-            <Sequence sap2010:Annotation.AnnotationText="assunto" DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="513,416" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence sap2010:Annotation.AnnotationText="assunto" DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="722,5600" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="str_body" />
                 <Variable x:TypeArguments="s:String[]" Name="arrLinhas" />
@@ -334,7 +325,23 @@
                   <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,356" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="688,390" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,279" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="CI" sap:VirtualizedContainerService.HintSize="416,219" sap2010:WorkflowViewState.IdRef="AddQueueItem_2" ItemInformationCollection="[new System.Collections.Generic.Dictionary(Of System.String, System.Object) From {  }]" Priority="Normal" QueueType="CI QUEUE">
+                      <ui:AddQueueItem.ItemInformation>
+                        <InArgument x:TypeArguments="x:String" x:Key="remetenteCI">[CurrentEmail.From.toString]</InArgument>
+                      </ui:AddQueueItem.ItemInformation>
+                    </ui:AddQueueItem>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="688,365" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                 <ui:MultipleAssign.AssignOperations>
                   <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -404,16 +411,211 @@
                   </scg:List>
                 </ui:MultipleAssign.AssignOperations>
               </ui:MultipleAssign>
+              <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="688,4785" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+                <ueab:ExcelProcessScopeX.Body>
+                  <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                    </ActivityAction.Argument>
+                    <Sequence sap:VirtualizedContainerService.HintSize="654,4675" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="620,4615" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="586,4532" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="D:\Desktop\RoboCI.xlsx">
+                          <ueab:ExcelApplicationCard.Body>
+                            <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                              </ActivityAction.Argument>
+                              <Sequence sap:VirtualizedContainerService.HintSize="552,4240" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Sequence sap:VirtualizedContainerService.HintSize="518,2732" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="468,2375" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Plan1&quot;).Cell(&quot;A5:B5&quot;)]" DisplayName="Solicitante 1ª via" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[nomeSolicitante]" />
+                                    <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Plan1&quot;).Cell(&quot;F5:G5&quot;)]" DisplayName="Solicitante 2ª via" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteCellX_7" Value="[nomeSolicitante]" />
+                                    <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Plan1&quot;).Cell(&quot;C5:D5&quot;)]" DisplayName="Área Solicitante 1ª via" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[areaSolicitante]" />
+                                    <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Plan1&quot;).Cell(&quot;H5:I5&quot;)]" DisplayName="Área Solicitante 2ª via" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteCellX_8" Value="[areaSolicitante]" />
+                                    <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Plan1&quot;).Cell(&quot;A3:B3&quot;)]" DisplayName="Solicitado 1ª via" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[nomeSolicitado]" />
+                                    <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Plan1&quot;).Cell(&quot;F3:G3&quot;)]" DisplayName="Solicitado 2ª via" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteCellX_9" Value="[nomeSolicitado]" />
+                                    <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Plan1&quot;).Cell(&quot;C3:D3&quot;)]" DisplayName="Área Solicitado 1ª via" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteCellX_5" Value="[areaSolicitado]" />
+                                    <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Plan1&quot;).Cell(&quot;H3:I3&quot;)]" DisplayName="Área Solicitado 2ª via" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteCellX_10" Value="[areaSolicitado]" />
+                                    <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Plan1&quot;).Cell(&quot;A7:D7&quot;)]" DisplayName="Descrição 1ª via" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[descricaoSolicitacao]" />
+                                    <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Plan1&quot;).Cell(&quot;F7:I7&quot;)]" DisplayName="Descrição 2ª via" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteCellX_11" Value="[descricaoSolicitacao]" />
+                                    <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Plan1&quot;).Cell(&quot;A9:A10&quot;)]" DisplayName="Data 1ª via" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteCellX_6" Value="[dataSolicitacao]" />
+                                    <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Plan1&quot;).Cell(&quot;F9:F10&quot;)]" DisplayName="Data 2ª via" sap:VirtualizedContainerService.HintSize="434,182" sap2010:WorkflowViewState.IdRef="WriteCellX_12" Value="[dataSolicitacao]" />
+                                  </Sequence>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="468,265" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ueab:SaveAsPdfX EndPage="{x:Null}" StartPage="{x:Null}" DestinationPdfPath="D:\Desktop\RoboCI.pdf" DisplayName="Save Excel File As PDF" sap:VirtualizedContainerService.HintSize="434,182" sap2010:WorkflowViewState.IdRef="SaveAsPdfX_1" SaveQuality="StandardQuality" Workbook="[Excel]" />
+                                  </Sequence>
+                                </Sequence>
+                                <Sequence sap:VirtualizedContainerService.HintSize="518,1448" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Start Process" FileName="D:\Desktop\RoboCI.pdf" sap:VirtualizedContainerService.HintSize="484,120" sap2010:WorkflowViewState.IdRef="StartProcess_1" />
+                                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Robo CI" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,1245" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Always" ScopeGuid="8f1dfb97-7d89-4fa2-8290-0e40cf66f3b9" Version="V2">
+                                    <uix:NApplicationCard.Body>
+                                      <ActivityAction x:TypeArguments="x:Object">
+                                        <ActivityAction.Argument>
+                                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                        </ActivityAction.Argument>
+                                        <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,955" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DelayBefore="3" DisplayName="Click 'Ícone 'printer icon''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8f1dfb97-7d89-4fa2-8290-0e40cf66f3b9" Version="V4">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable CVScreenId="c76a6cec-b17b-4e58-8a8a-944a68660535" CvElementArea="853, 48, 24, 22" CvType="Icon" DesignTimeRectangle="851, 46, 28, 26" DesignTimeScaleFactor="1" ElementType="Icon" Guid="24a598cb-7276-4caf-bae8-e51a31cd0ceb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACwSURBVEhL7ZPhCcQgDEY7iws4jws4gYM4llvl+A6EtJyJiVLuhw8+sBJ9mJKLXuYIt/N/whgjhRCmgloNVYiLUkpUaxWDGtRqTAlLKdRaE4Mat9DSxlFG7f0pxIGZNo4itXcoxEEvOHuEN7jQM4dLQqytc4jvJWFfS3CJS9hfxYU55+8+D/YAr8W+Sfj8bxZhj2nwOVwo0YUaU0K8BBdKQc0WoWcsJFThbo5wOy8LiT57jOfEy/4/TQAAAABJRU5ErkJggg==" InformativeScreenshot="f8a04d69d7ee236815845f6cb624ee40.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='teste.pdf - Adobe Acrobat Reader (64-bit)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target CVScreenId="c76a6cec-b17b-4e58-8a8a-944a68660535" CvElementArea="811, 48, 24, 22" CvType="Icon" DesignTimeRectangle="809, 46, 28, 26" ElementType="Icon" Guid="88e09a0c-6c71-47fd-852b-c615085e8954" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEtSURBVEhL7ZTNDYMwDEY7C4gLJ25cGYAFmIAVmIEhmIItWIM9XD1UV27qBKqiqgc+ySI4Ic8/CTf5sS7g6fp/4LIs0ratVFW1WV3XMgzDY3ZfHwHneZY8zyXLsjcDfkSHgOu6yjRNT1jXdZsPI7uiKJ7+PSWBbNg0zUsmvIciGOYA7ykJtDBKVpbltrknzXIcx4fHVxLIJhgHZU8KxAiM6niKArVM3mHg8GBWrMeA8V2sny6Qsmi0IdDOeeUjM+Zi/XSBWh6itXcsvBaMw0wRQTLvyQXqZrYPFsbTjkOoBuwpCsRsHxjj6/t+ywBjHK7jL4SPP5AnF6gfqdErTqpeCQUifFTC9tbLWuUCEVHrxuHhsEAVa/Bxd1PXKApMyQMe1QV09XPgN7qAJ0vkDkL5LCI8c/dqAAAAAElFTkSuQmCC" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                            <uix:NClick.VerifyOptions>
+                                              <uix:VerifyExecutionOptions DisplayName="Ícone 'Ícone 'printer icon''" Mode="Appears">
+                                                <uix:VerifyExecutionOptions.Retry>
+                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                </uix:VerifyExecutionOptions.Retry>
+                                                <uix:VerifyExecutionOptions.Target>
+                                                  <uix:TargetAnchorable CVScreenId="c76a6cec-b17b-4e58-8a8a-944a68660535" ContentHash="R2_qL979KkOGdR8Xm4Am8A" CvElementArea="853, 48, 24, 22" CvType="Icon" DesignTimeRectangle="851, 46, 28, 26" DesignTimeScaleFactor="1" ElementType="Icon" Guid="24a598cb-7276-4caf-bae8-e51a31cd0ceb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACwSURBVEhL7ZPhCcQgDEY7iws4jws4gYM4llvl+A6EtJyJiVLuhw8+sBJ9mJKLXuYIt/N/whgjhRCmgloNVYiLUkpUaxWDGtRqTAlLKdRaE4Mat9DSxlFG7f0pxIGZNo4itXcoxEEvOHuEN7jQM4dLQqytc4jvJWFfS3CJS9hfxYU55+8+D/YAr8W+Sfj8bxZhj2nwOVwo0YUaU0K8BBdKQc0WoWcsJFThbo5wOy8LiT57jOfEy/4/TQAAAABJRU5ErkJggg==" InformativeScreenshot="f8a04d69d7ee236815845f6cb624ee40.png" Reference="60oSk7LFp0izfRZcvjdP0w/VrqoAaIwhE6590lTsbW38Q" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='teste.pdf - Adobe Acrobat Reader (64-bit)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                        <uix:Target CVScreenId="c76a6cec-b17b-4e58-8a8a-944a68660535" CvElementArea="811, 48, 24, 22" CvType="Icon" DesignTimeRectangle="809, 46, 28, 26" ElementType="Icon" Guid="88e09a0c-6c71-47fd-852b-c615085e8954" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEtSURBVEhL7ZTNDYMwDEY7C4gLJ25cGYAFmIAVmIEhmIItWIM9XD1UV27qBKqiqgc+ySI4Ic8/CTf5sS7g6fp/4LIs0ratVFW1WV3XMgzDY3ZfHwHneZY8zyXLsjcDfkSHgOu6yjRNT1jXdZsPI7uiKJ7+PSWBbNg0zUsmvIciGOYA7ykJtDBKVpbltrknzXIcx4fHVxLIJhgHZU8KxAiM6niKArVM3mHg8GBWrMeA8V2sny6Qsmi0IdDOeeUjM+Zi/XSBWh6itXcsvBaMw0wRQTLvyQXqZrYPFsbTjkOoBuwpCsRsHxjj6/t+ywBjHK7jL4SPP5AnF6gfqdErTqpeCQUifFTC9tbLWuUCEVHrxuHhsEAVa/Bxd1PXKApMyQMe1QV09XPgN7qAJ0vkDkL5LCI8c/dqAAAAAElFTkSuQmCC" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:VerifyExecutionOptions.Target>
+                                                <uix:VerifyExecutionOptions.Timeout>
+                                                  <InArgument x:TypeArguments="x:Double" />
+                                                </uix:VerifyExecutionOptions.Timeout>
+                                              </uix:VerifyExecutionOptions>
+                                            </uix:NClick.VerifyOptions>
+                                          </uix:NClick>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DelayBefore="3" DisplayName="Click 'Paisagem'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8f1dfb97-7d89-4fa2-8290-0e40cf66f3b9" Version="V4">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable CVScreenId="3715133f-23b5-4f35-a435-4d366bb5ed44" CvElementArea="244, 405, 17, 17" CvTextArea="263, 407, 56, 14" CvTextArgument="Paisagem" CvType="RadioButton" DesignTimeRectangle="246, 405, 95, 18" DesignTimeScaleFactor="1" ElementType="RadioButton" FullSelectorArgument="&lt;wnd cls='Button' title='Paisagem' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Button' title='Paisagem' /&gt;" Guid="171b2b3e-79a9-4d66-babc-0366cf26a4ef" InformativeScreenshot="dc007dda8d5373b6054f7bd9e50306b2.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='#32770' title='Imprimir' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target CVScreenId="3715133f-23b5-4f35-a435-4d366bb5ed44" CvTextArea="263, 407, 56, 14" CvTextArgument="Paisagem" CvType="Text" DesignTimeRectangle="263, 407, 56, 14" ElementType="Text" Guid="931255ae-c906-472f-b60c-c6f8f6a32067" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                            <uix:NClick.VerifyOptions>
+                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                <uix:VerifyExecutionOptions.Retry>
+                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                </uix:VerifyExecutionOptions.Retry>
+                                                <uix:VerifyExecutionOptions.Timeout>
+                                                  <InArgument x:TypeArguments="x:Double" />
+                                                </uix:VerifyExecutionOptions.Timeout>
+                                              </uix:VerifyExecutionOptions>
+                                            </uix:NClick.VerifyOptions>
+                                          </uix:NClick>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DelayAfter="3" DelayBefore="3" DisplayName="Click 'Botão 'Imprimir''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8f1dfb97-7d89-4fa2-8290-0e40cf66f3b9" Version="V4">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable CVScreenId="51770cba-c293-461f-bb4d-2160eec1e68e" CvElementArea="636, 513, 85, 25" CvTextArea="655, 518, 48, 14" CvTextArgument="Imprimir" CvType="Button" DesignTimeRectangle="636, 512, 86, 26" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd cls='Button' title='Imprimir' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Button' title='Imprimir' check:text='Imprimir' /&gt;" Guid="c6729bed-55a7-464b-8f03-03fd228a1c0c" InformativeScreenshot="260d5f2571b3436e375553b4b99ced39.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='#32770' title='Imprimir' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target CVScreenId="51770cba-c293-461f-bb4d-2160eec1e68e" CvElementArea="732, 512, 85, 25" CvTextArea="749, 518, 52, 12" CvTextArgument="Cancelar" CvType="Button" DesignTimeRectangle="732, 512, 86, 26" ElementType="Button" FullSelectorArgument="&lt;wnd cls='Button' title='Cancelar' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Button' title='Cancelar' check:text='Cancelar' /&gt;" Guid="28a7430c-c117-4a19-8249-4cf16492ea49" SearchSteps="Selector, FuzzySelector, CV" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                            <uix:NClick.VerifyOptions>
+                                              <uix:VerifyExecutionOptions DisplayName="Botão 'Botão 'Imprimir''" Mode="Appears">
+                                                <uix:VerifyExecutionOptions.Retry>
+                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                </uix:VerifyExecutionOptions.Retry>
+                                                <uix:VerifyExecutionOptions.Target>
+                                                  <uix:TargetAnchorable CVScreenId="51770cba-c293-461f-bb4d-2160eec1e68e" ContentHash="vkxYqtPQH0yuKDdvNOgItg" CvElementArea="636, 513, 85, 25" CvTextArea="655, 518, 48, 14" CvTextArgument="Imprimir" CvType="Button" DesignTimeRectangle="636, 512, 86, 26" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd cls='Button' title='Imprimir' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Button' title='Imprimir' check:text='Imprimir' /&gt;" Guid="c6729bed-55a7-464b-8f03-03fd228a1c0c" InformativeScreenshot="260d5f2571b3436e375553b4b99ced39.png" Reference="60oSk7LFp0izfRZcvjdP0w/qiyilPt830GDe96rILv8oQ" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='#32770' title='Imprimir' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                        <uix:Target CVScreenId="51770cba-c293-461f-bb4d-2160eec1e68e" CvElementArea="732, 512, 85, 25" CvTextArea="749, 518, 52, 12" CvTextArgument="Cancelar" CvType="Button" DesignTimeRectangle="732, 512, 86, 26" ElementType="Button" FullSelectorArgument="&lt;wnd cls='Button' title='Cancelar' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Button' title='Cancelar' check:text='Cancelar' /&gt;" Guid="28a7430c-c117-4a19-8249-4cf16492ea49" SearchSteps="Selector, FuzzySelector, CV" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:VerifyExecutionOptions.Target>
+                                                <uix:VerifyExecutionOptions.Timeout>
+                                                  <InArgument x:TypeArguments="x:Double" />
+                                                </uix:VerifyExecutionOptions.Timeout>
+                                              </uix:VerifyExecutionOptions>
+                                            </uix:NClick.VerifyOptions>
+                                          </uix:NClick>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DelayBefore="3" DisplayName="Click 'CloseButton'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8f1dfb97-7d89-4fa2-8290-0e40cf66f3b9" Version="V4">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable CVScreenId="f4be5358-c874-4e5e-a626-319c5fd63069" CvElementArea="963, 1, 49, 34" CvType="CloseButton" DesignTimeRectangle="963, 1, 49, 34" DesignTimeScaleFactor="1" ElementType="Button" Guid="8b3b84a0-570b-4206-b7f2-2a2aa4f184b0" InformativeScreenshot="4665e1bd96c11f61c4118f26c0b0133a.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='teste.pdf - Adobe Acrobat Reader (64-bit)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target CVScreenId="f4be5358-c874-4e5e-a626-319c5fd63069" CvElementArea="929, 7, 20, 19" CvType="MaximizeButton" DesignTimeRectangle="929, 7, 20, 19" ElementType="Button" Guid="87ce765f-74e9-4e52-9179-8dd3c3a8ddd6" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                            <uix:NClick.VerifyOptions>
+                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                <uix:VerifyExecutionOptions.Retry>
+                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                </uix:VerifyExecutionOptions.Retry>
+                                                <uix:VerifyExecutionOptions.Timeout>
+                                                  <InArgument x:TypeArguments="x:Double" />
+                                                </uix:VerifyExecutionOptions.Timeout>
+                                              </uix:VerifyExecutionOptions>
+                                            </uix:NClick.VerifyOptions>
+                                          </uix:NClick>
+                                        </Sequence>
+                                      </ActivityAction>
+                                    </uix:NApplicationCard.Body>
+                                    <uix:NApplicationCard.TargetApp>
+                                      <uix:TargetApp Area="114, 0, 1021, 860" Arguments="d:\desktop\roboci.pdf" ContentHash="3ee6Rr-j20WzmayRBqoccg" FilePath="C:\Program Files\Adobe\Acrobat DC\Acrobat\acrobat.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJPSURBVFhH1ZY9aBRBFMevUVCUKIliOPHjEPzIkTRiOAWxSBobLawU7MQ2aBdFBBHkIHiFVjYhcGijyNkIKS5dIHCQSs6rQgq90mZvd7Z5vv9bNu7ODHGyN5xY/Jh9b96895+Zt8uWiOifYjjisdIRZo2hIdhiFvTcNgwHL1yLz45vD1a/UhAEe+fnD4oWH/2KJ/YFkos3pNfIYjh4AYUfP9iT74HBxjrFE/sHnG9zNxGGAwJsCYvgIsJw+BQA/iYiZwBXAdHrV0nDTR6k4HvXGpOSiJCeeK7XyxnAVYCaqVD4fkVERIuPrTFZwjdL2xy7pdfLGcBVQDx1SkZ15RKp+3eMeQN+O5Bbr5czgPMJzNcobNQlKU7CFqPjVUD47i3FJw6QOnfcOm/DqwA0HmJdmjDFqwA0nrp7m9TVaVK35qwxOl4FqDPjcvdhe5Xi8iFS5yelMePyYSmk5rhHvnzKrfEiIHr5TJLL/d+8TqpyLCl48eSfq+BRTma6kls7lAB8eNTpo0nR2SlS12bkGvAm4BSihYeJKBRm0BvqxuVcjsIC5K65MHYWvXiadL6t8TCP3nhwTwTr84UFwBc94cT8wcEzXkE9xoXCAnAC8GPntp25UliAL/5/AdVqVajX6zt2rVajVqtlzNnwIqDf78uY2r1eT0Skvt3wIgAFswLSMQWnkV2TxYsA7LbZbO7YnU5ntCeg2yjebrdHI2BYnAXgJ9KWYBjkx9RRwGd1odwddL9ZExUBuZCTcy/r9XJGCgc2oNYzDVstwzFqrM7RQaXfNljUiwb3UnIAAAAASUVORK5CYII=" InformativeScreenshot="ebaba1574accdb25452597539d0ad645.png" Reference="60oSk7LFp0izfRZcvjdP0w/WVpPOeZCd0SXvNzVltW_6Q" Selector="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='RoboCI.pdf - Adobe Acrobat Reader (64-bit)' /&gt;" Version="V2" />
+                                    </uix:NApplicationCard.TargetApp>
+                                  </uix:NApplicationCard>
+                                </Sequence>
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelApplicationCard.Body>
+                        </ueab:ExcelApplicationCard>
+                      </Sequence>
+                    </Sequence>
+                  </ActivityAction>
+                </ueab:ExcelProcessScopeX.Body>
+              </ueab:ExcelProcessScopeX>
             </Sequence>
           </ActivityAction>
         </uga:ForEachEmailConnections.Body>
-        <uga:ForEachEmailConnections.Filter>
-          <ugagf:MailFilterCollection LogicalOperator="And">
-            <ugagf:MailFilterCollection.Filters>
-              <ugagf:MailFilterElement DateEqualsFilter="{x:Null}" Values="{x:Null}" CollectionFilterOperator="In" Criteria="Subject" DateOperator="NewerThan" StringOperator="Contains" Value="Interna 7" />
-            </ugagf:MailFilterCollection.Filters>
-          </ugagf:MailFilterCollection>
-        </uga:ForEachEmailConnections.Filter>
         <uga:ForEachEmailConnections.Folder>
           <ugagm:FolderArgument ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" ManualEntryFolderName="{x:Null}" BrowserFolderId="INBOX" BrowserFolderName="Inbox" InputMode="Browse">
             <ugagm:FolderArgument.Backup>
@@ -427,203 +629,7 @@
         </uga:ForEachEmailConnections.Folder>
       </uga:ForEachEmailConnections>
     </Sequence>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="638,3254" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
-      <ueab:ExcelProcessScopeX.Body>
-        <ActivityAction x:TypeArguments="ui:IExcelProcess">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
-          </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="604,3135" sap2010:WorkflowViewState.IdRef="Sequence_31">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="570,3075" sap2010:WorkflowViewState.IdRef="Sequence_21">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="536,2992" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="D:\Desktop\RoboCI.xlsx">
-                <ueab:ExcelApplicationCard.Body>
-                  <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
-                    <ActivityAction.Argument>
-                      <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
-                    </ActivityAction.Argument>
-                    <Sequence sap:VirtualizedContainerService.HintSize="502,2700" sap2010:WorkflowViewState.IdRef="Sequence_30">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="468,2375" sap2010:WorkflowViewState.IdRef="Sequence_22">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Plan1&quot;).Cell(&quot;A5:B5&quot;)]" DisplayName="Solicitante 1ª via" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[nomeSolicitante]" />
-                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Plan1&quot;).Cell(&quot;F5:G5&quot;)]" DisplayName="Solicitante 2ª via" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteCellX_7" Value="[nomeSolicitante]" />
-                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Plan1&quot;).Cell(&quot;C5:D5&quot;)]" DisplayName="Área Solicitante 1ª via" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[areaSolicitante]" />
-                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Plan1&quot;).Cell(&quot;H5:I5&quot;)]" DisplayName="Área Solicitante 2ª via" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteCellX_8" Value="[areaSolicitante]" />
-                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Plan1&quot;).Cell(&quot;A3:B3&quot;)]" DisplayName="Solicitado 1ª via" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[nomeSolicitado]" />
-                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Plan1&quot;).Cell(&quot;F3:G3&quot;)]" DisplayName="Solicitado 2ª via" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteCellX_9" Value="[nomeSolicitado]" />
-                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Plan1&quot;).Cell(&quot;C3:D3&quot;)]" DisplayName="Área Solicitado 1ª via" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteCellX_5" Value="[areaSolicitado]" />
-                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Plan1&quot;).Cell(&quot;H3:I3&quot;)]" DisplayName="Área Solicitado 2ª via" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteCellX_10" Value="[areaSolicitado]" />
-                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Plan1&quot;).Cell(&quot;A7:D7&quot;)]" DisplayName="Descrição 1ª via" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[descricaoSolicitacao]" />
-                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Plan1&quot;).Cell(&quot;F7:I7&quot;)]" DisplayName="Descrição 2ª via" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteCellX_11" Value="[descricaoSolicitacao]" />
-                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Plan1&quot;).Cell(&quot;A9:A10&quot;)]" DisplayName="Data 1ª via" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteCellX_6" Value="[dataSolicitacao]" />
-                        <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Plan1&quot;).Cell(&quot;F9:F10&quot;)]" DisplayName="Data 2ª via" sap:VirtualizedContainerService.HintSize="434,182" sap2010:WorkflowViewState.IdRef="WriteCellX_12" Value="[dataSolicitacao]" />
-                      </Sequence>
-                      <Sequence sap:VirtualizedContainerService.HintSize="468,265" sap2010:WorkflowViewState.IdRef="Sequence_29">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <ueab:SaveAsPdfX EndPage="{x:Null}" StartPage="{x:Null}" DestinationPdfPath="D:\Desktop\RoboCI.pdf" DisplayName="Save Excel File As PDF" sap:VirtualizedContainerService.HintSize="434,182" sap2010:WorkflowViewState.IdRef="SaveAsPdfX_1" SaveQuality="StandardQuality" Workbook="[Excel]" />
-                      </Sequence>
-                    </Sequence>
-                  </ActivityAction>
-                </ueab:ExcelApplicationCard.Body>
-              </ueab:ExcelApplicationCard>
-            </Sequence>
-          </Sequence>
-        </ActivityAction>
-      </ueab:ExcelProcessScopeX.Body>
-    </ueab:ExcelProcessScopeX>
-    <Sequence sap:VirtualizedContainerService.HintSize="638,1455" sap2010:WorkflowViewState.IdRef="Sequence_34">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Start Process" FileName="D:\Desktop\RoboCI.pdf" sap:VirtualizedContainerService.HintSize="484,120" sap2010:WorkflowViewState.IdRef="StartProcess_1" />
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Robo CI" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,1243" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Always" ScopeGuid="8f1dfb97-7d89-4fa2-8290-0e40cf66f3b9" Version="V2">
-        <uix:NApplicationCard.Body>
-          <ActivityAction x:TypeArguments="x:Object">
-            <ActivityAction.Argument>
-              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-            </ActivityAction.Argument>
-            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,953" sap2010:WorkflowViewState.IdRef="Sequence_19">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DelayBefore="3" DisplayName="Click 'Ícone 'printer icon''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8f1dfb97-7d89-4fa2-8290-0e40cf66f3b9" Version="V4">
-                <uix:NClick.Target>
-                  <uix:TargetAnchorable CVScreenId="c76a6cec-b17b-4e58-8a8a-944a68660535" CvElementArea="853, 48, 24, 22" CvType="Icon" DesignTimeRectangle="851, 46, 28, 26" DesignTimeScaleFactor="1" ElementType="Icon" Guid="24a598cb-7276-4caf-bae8-e51a31cd0ceb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACwSURBVEhL7ZPhCcQgDEY7iws4jws4gYM4llvl+A6EtJyJiVLuhw8+sBJ9mJKLXuYIt/N/whgjhRCmgloNVYiLUkpUaxWDGtRqTAlLKdRaE4Mat9DSxlFG7f0pxIGZNo4itXcoxEEvOHuEN7jQM4dLQqytc4jvJWFfS3CJS9hfxYU55+8+D/YAr8W+Sfj8bxZhj2nwOVwo0YUaU0K8BBdKQc0WoWcsJFThbo5wOy8LiT57jOfEy/4/TQAAAABJRU5ErkJggg==" InformativeScreenshot="f8a04d69d7ee236815845f6cb624ee40.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='teste.pdf - Adobe Acrobat Reader (64-bit)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive">
-                    <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                        <uix:Target CVScreenId="c76a6cec-b17b-4e58-8a8a-944a68660535" CvElementArea="811, 48, 24, 22" CvType="Icon" DesignTimeRectangle="809, 46, 28, 26" ElementType="Icon" Guid="88e09a0c-6c71-47fd-852b-c615085e8954" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEtSURBVEhL7ZTNDYMwDEY7C4gLJ25cGYAFmIAVmIEhmIItWIM9XD1UV27qBKqiqgc+ySI4Ic8/CTf5sS7g6fp/4LIs0ratVFW1WV3XMgzDY3ZfHwHneZY8zyXLsjcDfkSHgOu6yjRNT1jXdZsPI7uiKJ7+PSWBbNg0zUsmvIciGOYA7ykJtDBKVpbltrknzXIcx4fHVxLIJhgHZU8KxAiM6niKArVM3mHg8GBWrMeA8V2sny6Qsmi0IdDOeeUjM+Zi/XSBWh6itXcsvBaMw0wRQTLvyQXqZrYPFsbTjkOoBuwpCsRsHxjj6/t+ywBjHK7jL4SPP5AnF6gfqdErTqpeCQUifFTC9tbLWuUCEVHrxuHhsEAVa/Bxd1PXKApMyQMe1QV09XPgN7qAJ0vkDkL5LCI8c/dqAAAAAElFTkSuQmCC" SearchSteps="CV" TargetType="ComputerVisionBased" />
-                      </scg:List>
-                    </uix:TargetAnchorable.Anchors>
-                  </uix:TargetAnchorable>
-                </uix:NClick.Target>
-                <uix:NClick.VerifyOptions>
-                  <uix:VerifyExecutionOptions DisplayName="Ícone 'Ícone 'printer icon''" Mode="Appears">
-                    <uix:VerifyExecutionOptions.Retry>
-                      <InArgument x:TypeArguments="x:Boolean" />
-                    </uix:VerifyExecutionOptions.Retry>
-                    <uix:VerifyExecutionOptions.Target>
-                      <uix:TargetAnchorable CVScreenId="c76a6cec-b17b-4e58-8a8a-944a68660535" ContentHash="R2_qL979KkOGdR8Xm4Am8A" CvElementArea="853, 48, 24, 22" CvType="Icon" DesignTimeRectangle="851, 46, 28, 26" DesignTimeScaleFactor="1" ElementType="Icon" Guid="24a598cb-7276-4caf-bae8-e51a31cd0ceb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACwSURBVEhL7ZPhCcQgDEY7iws4jws4gYM4llvl+A6EtJyJiVLuhw8+sBJ9mJKLXuYIt/N/whgjhRCmgloNVYiLUkpUaxWDGtRqTAlLKdRaE4Mat9DSxlFG7f0pxIGZNo4itXcoxEEvOHuEN7jQM4dLQqytc4jvJWFfS3CJS9hfxYU55+8+D/YAr8W+Sfj8bxZhj2nwOVwo0YUaU0K8BBdKQc0WoWcsJFThbo5wOy8LiT57jOfEy/4/TQAAAABJRU5ErkJggg==" InformativeScreenshot="f8a04d69d7ee236815845f6cb624ee40.png" Reference="60oSk7LFp0izfRZcvjdP0w/VrqoAaIwhE6590lTsbW38Q" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='teste.pdf - Adobe Acrobat Reader (64-bit)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive">
-                        <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target CVScreenId="c76a6cec-b17b-4e58-8a8a-944a68660535" CvElementArea="811, 48, 24, 22" CvType="Icon" DesignTimeRectangle="809, 46, 28, 26" ElementType="Icon" Guid="88e09a0c-6c71-47fd-852b-c615085e8954" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAYAAACkVDyJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEtSURBVEhL7ZTNDYMwDEY7C4gLJ25cGYAFmIAVmIEhmIItWIM9XD1UV27qBKqiqgc+ySI4Ic8/CTf5sS7g6fp/4LIs0ratVFW1WV3XMgzDY3ZfHwHneZY8zyXLsjcDfkSHgOu6yjRNT1jXdZsPI7uiKJ7+PSWBbNg0zUsmvIciGOYA7ykJtDBKVpbltrknzXIcx4fHVxLIJhgHZU8KxAiM6niKArVM3mHg8GBWrMeA8V2sny6Qsmi0IdDOeeUjM+Zi/XSBWh6itXcsvBaMw0wRQTLvyQXqZrYPFsbTjkOoBuwpCsRsHxjj6/t+ywBjHK7jL4SPP5AnF6gfqdErTqpeCQUifFTC9tbLWuUCEVHrxuHhsEAVa/Bxd1PXKApMyQMe1QV09XPgN7qAJ0vkDkL5LCI8c/dqAAAAAElFTkSuQmCC" SearchSteps="CV" TargetType="ComputerVisionBased" />
-                          </scg:List>
-                        </uix:TargetAnchorable.Anchors>
-                      </uix:TargetAnchorable>
-                    </uix:VerifyExecutionOptions.Target>
-                    <uix:VerifyExecutionOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionOptions.Timeout>
-                  </uix:VerifyExecutionOptions>
-                </uix:NClick.VerifyOptions>
-              </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DelayBefore="3" DisplayName="Click 'Paisagem'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8f1dfb97-7d89-4fa2-8290-0e40cf66f3b9" Version="V4">
-                <uix:NClick.Target>
-                  <uix:TargetAnchorable CVScreenId="3715133f-23b5-4f35-a435-4d366bb5ed44" CvElementArea="244, 405, 17, 17" CvTextArea="263, 407, 56, 14" CvTextArgument="Paisagem" CvType="RadioButton" DesignTimeRectangle="246, 405, 95, 18" DesignTimeScaleFactor="1" ElementType="RadioButton" FullSelectorArgument="&lt;wnd cls='Button' title='Paisagem' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Button' title='Paisagem' /&gt;" Guid="171b2b3e-79a9-4d66-babc-0366cf26a4ef" InformativeScreenshot="dc007dda8d5373b6054f7bd9e50306b2.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='#32770' title='Imprimir' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
-                    <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                        <uix:Target CVScreenId="3715133f-23b5-4f35-a435-4d366bb5ed44" CvTextArea="263, 407, 56, 14" CvTextArgument="Paisagem" CvType="Text" DesignTimeRectangle="263, 407, 56, 14" ElementType="Text" Guid="931255ae-c906-472f-b60c-c6f8f6a32067" SearchSteps="CV" TargetType="ComputerVisionBased" />
-                      </scg:List>
-                    </uix:TargetAnchorable.Anchors>
-                  </uix:TargetAnchorable>
-                </uix:NClick.Target>
-                <uix:NClick.VerifyOptions>
-                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                    <uix:VerifyExecutionOptions.Retry>
-                      <InArgument x:TypeArguments="x:Boolean" />
-                    </uix:VerifyExecutionOptions.Retry>
-                    <uix:VerifyExecutionOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionOptions.Timeout>
-                  </uix:VerifyExecutionOptions>
-                </uix:NClick.VerifyOptions>
-              </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DelayAfter="3" DelayBefore="3" DisplayName="Click 'Botão 'Imprimir''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8f1dfb97-7d89-4fa2-8290-0e40cf66f3b9" Version="V4">
-                <uix:NClick.Target>
-                  <uix:TargetAnchorable CVScreenId="51770cba-c293-461f-bb4d-2160eec1e68e" CvElementArea="636, 513, 85, 25" CvTextArea="655, 518, 48, 14" CvTextArgument="Imprimir" CvType="Button" DesignTimeRectangle="636, 512, 86, 26" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd cls='Button' title='Imprimir' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Button' title='Imprimir' check:text='Imprimir' /&gt;" Guid="c6729bed-55a7-464b-8f03-03fd228a1c0c" InformativeScreenshot="260d5f2571b3436e375553b4b99ced39.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='#32770' title='Imprimir' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
-                    <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                        <uix:Target CVScreenId="51770cba-c293-461f-bb4d-2160eec1e68e" CvElementArea="732, 512, 85, 25" CvTextArea="749, 518, 52, 12" CvTextArgument="Cancelar" CvType="Button" DesignTimeRectangle="732, 512, 86, 26" ElementType="Button" FullSelectorArgument="&lt;wnd cls='Button' title='Cancelar' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Button' title='Cancelar' check:text='Cancelar' /&gt;" Guid="28a7430c-c117-4a19-8249-4cf16492ea49" SearchSteps="Selector, FuzzySelector, CV" />
-                      </scg:List>
-                    </uix:TargetAnchorable.Anchors>
-                  </uix:TargetAnchorable>
-                </uix:NClick.Target>
-                <uix:NClick.VerifyOptions>
-                  <uix:VerifyExecutionOptions DisplayName="Botão 'Botão 'Imprimir''" Mode="Appears">
-                    <uix:VerifyExecutionOptions.Retry>
-                      <InArgument x:TypeArguments="x:Boolean" />
-                    </uix:VerifyExecutionOptions.Retry>
-                    <uix:VerifyExecutionOptions.Target>
-                      <uix:TargetAnchorable CVScreenId="51770cba-c293-461f-bb4d-2160eec1e68e" ContentHash="vkxYqtPQH0yuKDdvNOgItg" CvElementArea="636, 513, 85, 25" CvTextArea="655, 518, 48, 14" CvTextArgument="Imprimir" CvType="Button" DesignTimeRectangle="636, 512, 86, 26" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd cls='Button' title='Imprimir' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Button' title='Imprimir' check:text='Imprimir' /&gt;" Guid="c6729bed-55a7-464b-8f03-03fd228a1c0c" InformativeScreenshot="260d5f2571b3436e375553b4b99ced39.png" Reference="60oSk7LFp0izfRZcvjdP0w/qiyilPt830GDe96rILv8oQ" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='#32770' title='Imprimir' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive">
-                        <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target CVScreenId="51770cba-c293-461f-bb4d-2160eec1e68e" CvElementArea="732, 512, 85, 25" CvTextArea="749, 518, 52, 12" CvTextArgument="Cancelar" CvType="Button" DesignTimeRectangle="732, 512, 86, 26" ElementType="Button" FullSelectorArgument="&lt;wnd cls='Button' title='Cancelar' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Button' title='Cancelar' check:text='Cancelar' /&gt;" Guid="28a7430c-c117-4a19-8249-4cf16492ea49" SearchSteps="Selector, FuzzySelector, CV" />
-                          </scg:List>
-                        </uix:TargetAnchorable.Anchors>
-                      </uix:TargetAnchorable>
-                    </uix:VerifyExecutionOptions.Target>
-                    <uix:VerifyExecutionOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionOptions.Timeout>
-                  </uix:VerifyExecutionOptions>
-                </uix:NClick.VerifyOptions>
-              </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DelayBefore="3" DisplayName="Click 'CloseButton'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,216" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8f1dfb97-7d89-4fa2-8290-0e40cf66f3b9" Version="V4">
-                <uix:NClick.Target>
-                  <uix:TargetAnchorable CVScreenId="f4be5358-c874-4e5e-a626-319c5fd63069" CvElementArea="963, 1, 49, 34" CvType="CloseButton" DesignTimeRectangle="963, 1, 49, 34" DesignTimeScaleFactor="1" ElementType="Button" Guid="8b3b84a0-570b-4206-b7f2-2a2aa4f184b0" InformativeScreenshot="4665e1bd96c11f61c4118f26c0b0133a.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='teste.pdf - Adobe Acrobat Reader (64-bit)' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive">
-                    <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                        <uix:Target CVScreenId="f4be5358-c874-4e5e-a626-319c5fd63069" CvElementArea="929, 7, 20, 19" CvType="MaximizeButton" DesignTimeRectangle="929, 7, 20, 19" ElementType="Button" Guid="87ce765f-74e9-4e52-9179-8dd3c3a8ddd6" SearchSteps="CV" TargetType="ComputerVisionBased" />
-                      </scg:List>
-                    </uix:TargetAnchorable.Anchors>
-                  </uix:TargetAnchorable>
-                </uix:NClick.Target>
-                <uix:NClick.VerifyOptions>
-                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                    <uix:VerifyExecutionOptions.Retry>
-                      <InArgument x:TypeArguments="x:Boolean" />
-                    </uix:VerifyExecutionOptions.Retry>
-                    <uix:VerifyExecutionOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionOptions.Timeout>
-                  </uix:VerifyExecutionOptions>
-                </uix:NClick.VerifyOptions>
-              </uix:NClick>
-            </Sequence>
-          </ActivityAction>
-        </uix:NApplicationCard.Body>
-        <uix:NApplicationCard.TargetApp>
-          <uix:TargetApp Area="114, 0, 1021, 860" Arguments="d:\desktop\roboci.pdf" ContentHash="3ee6Rr-j20WzmayRBqoccg" FilePath="C:\Program Files\Adobe\Acrobat DC\Acrobat\acrobat.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJPSURBVFhH1ZY9aBRBFMevUVCUKIliOPHjEPzIkTRiOAWxSBobLawU7MQ2aBdFBBHkIHiFVjYhcGijyNkIKS5dIHCQSs6rQgq90mZvd7Z5vv9bNu7ODHGyN5xY/Jh9b96895+Zt8uWiOifYjjisdIRZo2hIdhiFvTcNgwHL1yLz45vD1a/UhAEe+fnD4oWH/2KJ/YFkos3pNfIYjh4AYUfP9iT74HBxjrFE/sHnG9zNxGGAwJsCYvgIsJw+BQA/iYiZwBXAdHrV0nDTR6k4HvXGpOSiJCeeK7XyxnAVYCaqVD4fkVERIuPrTFZwjdL2xy7pdfLGcBVQDx1SkZ15RKp+3eMeQN+O5Bbr5czgPMJzNcobNQlKU7CFqPjVUD47i3FJw6QOnfcOm/DqwA0HmJdmjDFqwA0nrp7m9TVaVK35qwxOl4FqDPjcvdhe5Xi8iFS5yelMePyYSmk5rhHvnzKrfEiIHr5TJLL/d+8TqpyLCl48eSfq+BRTma6kls7lAB8eNTpo0nR2SlS12bkGvAm4BSihYeJKBRm0BvqxuVcjsIC5K65MHYWvXiadL6t8TCP3nhwTwTr84UFwBc94cT8wcEzXkE9xoXCAnAC8GPntp25UliAL/5/AdVqVajX6zt2rVajVqtlzNnwIqDf78uY2r1eT0Skvt3wIgAFswLSMQWnkV2TxYsA7LbZbO7YnU5ntCeg2yjebrdHI2BYnAXgJ9KWYBjkx9RRwGd1odwddL9ZExUBuZCTcy/r9XJGCgc2oNYzDVstwzFqrM7RQaXfNljUiwb3UnIAAAAASUVORK5CYII=" InformativeScreenshot="ebaba1574accdb25452597539d0ad645.png" Reference="60oSk7LFp0izfRZcvjdP0w/WVpPOeZCd0SXvNzVltW_6Q" Selector="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='RoboCI.pdf - Adobe Acrobat Reader (64-bit)' /&gt;" Version="V2" />
-        </uix:NApplicationCard.TargetApp>
-      </uix:NApplicationCard>
-    </Sequence>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="638,117" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;&quot;]" />
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="638,48" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="758,48" sap2010:WorkflowViewState.IdRef="CommentOut_2">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="570,1155" sap2010:WorkflowViewState.IdRef="Sequence_24">
           <sap:WorkflowViewStateService.ViewState>
